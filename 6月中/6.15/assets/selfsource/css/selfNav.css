@@ -1,0 +1,167 @@
+@charset "utf-8";
+body,html{
+    width: 100%;
+    height: 100%;
+    /*background: url("../images/body-bg.png") no-repeat;
+    background-size: 100% 100%;*/
+}
+body{
+    font-family: "微软雅黑";
+}
+/*.page-header-fixed .page-container{
+    padding-bottom: 20px;
+    margin-top: 65px;
+}*/
+/*.page-container{
+    background: url("../images/body-bg.png") no-repeat;
+    background-size: 100% 100%;
+}*/
+.Bgnew{
+    /*background: url("../images/body-bg.png") no-repeat;
+    background-size: 100% 100%;*/
+    background:#0b1024 !important;
+}
+/*导航*/
+.page-header-self.navbar{
+    height: 70px;
+    background: #254184;
+	box-shadow:1px 1px #fffc0f;
+}
+
+.page-header-self.navbar .menu-toggler.responsive-toggler{
+    margin: 25px 6px 0;
+}
+.page-header-self.navbar .page-logo .logo-default{
+    margin: 15px 0 0 0;
+}
+.page-header-self .nav.navbar-nav{
+    height: 70px;
+}
+.page-header-self.navbar .page-logo{
+    width: 326px;
+	height:70px;
+}
+.page-header-self.navbar .hor-menu .navbar-nav>li>a{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #fff;
+}
+.page-header-self.navbar .hor-menu .navbar-nav>li>a:hover{
+    color: #fff !important;
+    background: #277ed7 !important;
+	box-shadow: 0px -4px 0px #fce20b inset;
+}
+.page-header-self.navbar .hor-menu .navbar-nav>li.active>a{
+    background: #277ed7 !important;
+	box-shadow: 0px -4px 0px #fce20b inset;
+}
+.page-header-self.navbar .hor-menu .navbar-nav>li.active .selected, .page-header.navbar .hor-menu .navbar-nav>li.current .selected{
+    bottom: 6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+}
+.page-header-self.navbar .page-logo>.logo-image, .page-header.navbar .page-logo>.current-system-name{
+    margin-left: 10px;
+    line-height: 70px;
+    font-size: 16px;
+    color: #fff;
+}
+.page-header.navbar .top-menu .navbar-nav>li.dropdown{
+	height:70px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle{
+    background: none !important;
+    padding: 11px 0 11px 0;
+	height:70px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle:hover{
+    background: none !important;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle>img{
+    width: 48px;
+    height: 48px;
+	margin-top:0px;
+	margin-right:10px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle>.username{
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+.page-header-self .top-menu .dropdown-quick-sidebar-toggler>.dropdown-toggle{
+    padding: 30px 0 0 0 !important;
+}
+.page-header-self .top-menu .dropdown-quick-sidebar-toggler>.dropdown-toggle:hover{
+
+    background:none !important;
+}
+.iconDown{
+	background:url("../images/icon-down.png") no-repeat;
+	width: 14px;
+    height: 7px;
+    display: inline-block;
+}
+.iconUp{
+	background:url(../images/icon-up.png) no-repeat;
+	width: 14px;
+    height: 7px;
+    display: inline-block;
+	position:absolute;
+	top: -6px;
+    right: 8px;
+	z-index:999;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle>i{
+    color: #99d1dc !important;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle>i:hover{
+    color: #99d1dc !important;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.divider-line{
+    padding: 0 16px 0 16px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.divider-line span{
+    display: inline-block;
+    width: 1px;
+    height: 50px;
+    margin-top: 15px;
+    background: url("../images/divider-line.jpg") no-repeat;
+}
+.classic-menu-dropdown a em,.mega-menu-dropdown a em{
+	display: inline-block;
+	background:url("../images/icon.png") no-repeat;
+	vertical-align: sub;
+	line-height:70px;
+}
+.user-m{
+	background-position:0 0 !important;
+	width:16px;
+	height:20px;
+}
+.bell-m{
+	background-position:0 -22px !important;
+	width:22px;
+	height:22px;
+}
+.data-m{
+	background-position:0 -46px !important;
+	width:22px;
+	height:21px;
+}
+.chart-m{
+	background-position:0 -69px !important;
+	width:22px;
+	height:23px;
+}
+.query-m{
+	background-position:0 -94px !important;
+	width:20px;
+	height:24px;
+}
+
+
+

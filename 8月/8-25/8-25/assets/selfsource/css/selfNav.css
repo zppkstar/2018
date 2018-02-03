@@ -1,0 +1,408 @@
+@charset "utf-8";
+body,html{
+    width: 100%;
+    height: 100%;
+    background: url("../images/body-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+body{
+    font-family: "微软雅黑";
+}
+.page-header-fixed .page-container{
+    padding-bottom: 0;
+    margin-top: 0px;
+}
+
+/*导航*/
+.page-header-self.navbar{
+    height: 70px;
+    background: #254085;
+}
+
+.page-header-self.navbar .menu-toggler.responsive-toggler{
+    margin: 25px 6px 0;
+}
+.page-header-self.navbar .page-logo .logo-default{
+    margin: 15px 0 0 0;
+}
+.page-header-self .nav.navbar-nav{
+    height: 70px;
+}
+.page-header-self.navbar .page-logo{
+    width: 326px;
+	height:70px;
+}
+.page-header-self.navbar .hor-menu .navbar-nav>li>a{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #fff;
+}
+.page-header.navbar .hor-menu.hor-menu-light .navbar-nav > li > a{
+	color:#fff
+}
+.page-header-self.navbar .hor-menu .navbar-nav>li>a:hover{
+    color: #fff !important;
+    background: #267ed8 !important;
+}
+.page-header-self.navbar .hor-menu .navbar-nav>li.active>a{
+    background: #267ed8 !important;
+}
+.page-header-self.navbar .page-logo>.logo-image, .page-header.navbar .page-logo>.current-system-name{
+    margin-left: 10px;
+    line-height: 70px;
+    font-size: 16px;
+    color: #fff;
+}
+.page-header.navbar .top-menu .navbar-nav>li.dropdown{
+	height:70px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle{
+    background: none !important;
+    padding: 11px 0 11px 0;
+	height:70px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle:hover{
+    background: none !important;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle>img{
+    width: 48px;
+    height: 48px;
+	margin-top:0px;
+	margin-right:10px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown-user-self .dropdown-toggle>.username{
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+.page-header-self .top-menu .dropdown-quick-sidebar-toggler>.dropdown-toggle{
+    padding: 30px 0 0 0 !important;
+}
+.page-header-self .top-menu .dropdown-quick-sidebar-toggler>.dropdown-toggle:hover{
+
+    background:none !important;
+}
+.iconDown{
+	background:url("../images/icon-down.png") no-repeat;
+	width: 14px;
+    height: 7px;
+    display: inline-block;
+}
+.iconUp{
+	background:url(../images/icon-up.png) no-repeat;
+	width: 14px;
+    height: 7px;
+    display: inline-block;
+	position:absolute;
+	top: -6px;
+    right: 8px;
+	z-index:999;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle>i{
+    color: #99d1dc !important;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle>i:hover{
+    color: #99d1dc !important;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.divider-line{
+    padding: 0 16px 0 16px;
+}
+.page-header-self.navbar .top-menu .navbar-nav>li.divider-line span{
+    display: inline-block;
+    width: 1px;
+    height: 50px;
+    margin-top: 15px;
+    background: url("../images/divider-line.jpg") no-repeat;
+}
+.classic-menu-dropdown a em,.mega-menu-dropdown a em{
+	display: inline-block;
+	background:url("../images/icon.png") no-repeat;
+	vertical-align: sub;
+	line-height:70px;
+}
+.user-m{
+	background-position:0 0 !important;
+	width:16px;
+	height:20px;
+}
+.bell-m{
+	background-position:0 -22px !important;
+	width:22px;
+	height:22px;
+}
+.data-m{
+	background-position:0 -46px !important;
+	width:22px;
+	height:21px;
+}
+.chart-m{
+	background-position:0 -69px !important;
+	width:22px;
+	height:23px;
+}
+.query-m{
+	background-position:0 -94px !important;
+	width:20px;
+	height:24px;
+}
+
+	
+.page-content-wrapper{background:#254085}
+.border-blue{background:#031835;padding-bottom: 20px;}
+body{background:#031835;}
+.select2-container--bootstrap{
+    width:120px;
+    display: inline-block;
+}
+.select2-container--bootstrap .select2-selection--single{
+    border:1px solid #4a5d8e;
+    background: #0b1024;
+    color:#fff;
+}
+.select2-container--bootstrap .select2-selection--single .select2-selection__placeholder,.select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+}
+.select2-container--bootstrap .select2-selection--single .select2-selection__arrow b{
+    border-color: #fff transparent transparent transparent;
+}
+.COMtitle{float:left;color:#f9fbfc;font-size:30px;text-align:center;margin-bottom:0;}
+.COMsubtitle{float:left;color:#f9fbfc;font-size:14px;text-align:center;width:100%;}
+.COMtop{border:1px solid #0c61a8;-webkit-box-shadow:inset 0 0 20px #22452d;  -moz-box-shadow:inset 0 0 20px #22452d;  box-shadow:inset 0 0 20px #22452d;  }
+.itemtitle{float:left;color:#fefeff;font-size:24px;text-align:center;margin-top:30px;margin-bottom:20px;}
+.itemlist li{width:50%;float:left;font-size:16px;color:#fefeff;line-height:34px;}
+.itemlist li strong{margin-left:20px;font-weight:normal}
+.COMfooter{border:1px solid #0c61a8;-webkit-box-shadow:inset 0 0 20px #22452d;  -moz-box-shadow:inset 0 0 20px #22452d;  box-shadow:inset 0 0 20px #22452d;}
+.pl0{padding-left:0;}
+.plr0{padding-left:0;padding-right:0;}
+
+.map-border-blue{
+	background: #031835;
+}
+.national-data{
+	color:#ffffff;
+	font-size:14px;
+	position:absolute;
+	top:250px;
+	left:680px;
+	writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/    
+    writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/  
+}
+.mapTitle{
+	color:#f9fbfc;
+	font-size:30px;
+	margin-left:130px;
+}
+.mapsubTitle{
+	font-size:14px;
+	color:#f9fbfc;
+	margin-left:136px;
+}
+.mapsubTitle strong{
+	color:#fc0617
+}
+.mapBorder{
+	position:relative;
+	top: -77px;
+}
+.mapBg{
+	background:url(../images/mapbg.png) no-repeat center;
+	width:703px;
+	height:507px;
+	margin: 0 10px
+}
+.mapBg .regional-distribution {
+    position: relative;
+}
+.mapBg .regional-distribution a {
+    position: absolute;
+    color: #fbfcfc;
+	font-size:12px;
+}
+.mapBg .wulumuqi {
+    left: 206px;
+    top: 130px;
+}
+
+.mapBg .wulumuqi a {
+    left: -51px;
+    top: 3px;
+}
+.circle {
+	display: inline-block;
+	position: absolute;
+    width: 6px;
+    height: 6px;
+	background:#fbfcfc;
+	border-radius:50%;
+}
+.wulumuqi-circle,.huhehaote-circle{
+	left: -29px;
+    top: -3px;
+}
+.mapBg .huhehaote {
+    left: 487px;
+    top: 189px;
+}
+.mapBg .huhehaote a {
+    left: -80px;
+    top: -8px;
+}
+.mapBg .yinchuan {
+    left: 396px;
+    top: 215px;
+}
+.mapBg .yinchuan a {
+    left: 12px;
+    top: -6px;
+}
+.mapBg .xining {
+    left: 339px;
+    top: 247px;
+}
+.mapBg .xian a,.mapBg .xining a,.mapBg .chengdu a,.mapBg .changsha a ,.mapBg .wuhan a,.mapBg .fuzhou a  {
+    left: -28px;
+    top: -6px;
+}
+.mapBg .xian {
+    left: 435px;
+    top: 273px;
+}
+.mapBg .chengdu {
+    left: 370px;
+    top: 324px;
+}
+.mapBg .changsha {
+    left: 490px;
+    top: 355px;
+}
+.mapBg .wuhan {
+    left:515px;
+    top: 322px;
+}
+.mapBg .fuzhou {
+    left: 585px;
+    top: 376px;
+}
+.mapBg .lasa {
+    left: 253px;
+    top: 312px;
+}
+.mapBg .lasa a,.mapBg .kunming a ,.mapBg .guiyang a,.mapBg .nanning a,.mapBg .xianggang a,.mapBg .guangzhou a,.mapBg .taibei a,.mapBg .nanchang a,.mapBg .shanghai a,.mapBg .nanjing a,.mapBg .jinan a,.mapBg .shijiazhuang a,.mapBg .changchun a,.mapBg .haerbin a  {
+    left: -51px;
+    top: 3px;
+}
+.lasa-circle,.kunming-circle,.guiyang-circle,.nanning-circle,.xianggang-circle,.guangzhou-circle,.taibei-circle,.nanchang-circle,.shanghai-circle,.nanjing-circle,.tianjin-circle,.jinan-circle,.shijiazhuang-circle,.changchun-circle,.haerbin-circle{
+	left: -60px;
+    top: 8px;
+}
+.mapBg .kunming {
+    left: 410px;
+    top: 396px;
+}
+.mapBg .guiyang {
+    left: 466px;
+    top: 372px;
+}
+.mapBg .nanning {
+    left: 497px;
+    top: 418px;
+}
+.mapBg .xianggang {
+    left: 578px;
+    top: 429px;
+}
+.mapBg .guangzhou {
+    left: 571px;
+    top: 412px;
+}
+.mapBg .taibei {
+    left: 679px;
+    top: 382px;
+}
+.mapBg .nanchang {
+    left: 591px;
+    top: 335px;
+}
+.mapBg .nanjing {
+    left: 631px;
+    top: 290px;
+}
+.mapBg .shanghai {
+    left: 665px;
+    top: 301px;
+}
+.mapBg .tianjin {
+    left: 593px;
+    top: 188px;
+}
+.mapBg .tianjin a{
+	left: -51px;
+    top: 8px;
+}
+.mapBg .jinan {
+    left: 598px;
+    top: 226px;
+}
+.mapBg .shijiazhuang {
+    left: 563px;
+    top: 207px;
+}
+.mapBg .haerbin {
+    left: 682px;
+    top: 87px;
+}
+.mapBg .changchun{
+	left:674px;
+	top:114px;
+}
+.mapBg .taiyuan {
+    left:518px;
+    top: 224px;
+}
+
+.mapBg .taiyuan a,.mapBg .zhengzhou a,.mapBg .hefei a,.mapBg .hangzhou a,.mapBg .aomen a,.mapBg .shenyang a,.mapBg .lanzhou a,.mapBg .haikou a  {
+    left: -51px;
+    top: 3px;
+}
+.taiyuan-circle,.zhengzhou-circle,.hefei-circle,.hangzhou-circle,.aomen-circle,.shenyang-circle,.lanzhou-circle{
+	left: -42px;
+    top: -3px;
+}
+.mapBg .zhengzhou {
+    left:537px;
+    top: 270px;
+}
+.mapBg .hefei {
+    left:590px;
+    top: 301px;
+}
+.mapBg .hangzhou {
+    left:628px;
+    top: 322px;
+}
+.mapBg .aomen {
+    left:540px;
+    top: 443px;
+}
+.mapBg .shenyang {
+    left:644px;
+    top: 154px;
+}
+.mapBg .beijing{
+	left:524px;
+    top: 174px;
+}
+.mapBg .lanzhou {
+    left:414px;
+    top: 256px;
+}
+.mapBg .haikou {
+    left:494px;
+    top: 477px;
+}
+.haikou-circle{
+	left: -30px;
+    top: -3px;
+}

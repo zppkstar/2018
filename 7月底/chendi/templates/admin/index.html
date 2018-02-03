@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8"/>
+    <title>陈经纶中学智能数据分析系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link href="../../assets/admin/pages/css/timeline.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/admin/pages/css/news.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/admin/pages/css/todo.css" rel="stylesheet" type="text/css">
+    <!-- BEGIN THEME STYLES -->
+    <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link id="style_color" href="../../assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+	<link href="../../assets/global/css/components.min.css" rel="stylesheet" type="text/css" />
+    <!--slefCss _Begin-->
+    <link rel="stylesheet" href="../../assets/selfsource/css/selfNav.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="../../assets/selfsource/css/selfCon.css" rel="stylesheet" type="text/css"/>
+    <!--slefCss _End-->
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar  page-header-self">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner page-header navbar  page-header-self">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="index.html"><img src="../../assets/selfsource/images/cjl-system-logo.png" alt="logo" class="logo-default" /> </a>
+            <span class="current-system-name pull-left">陈经纶中学智能数据分析系统</span>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN HORIZANTAL MENU -->
+        <!-- DOC: Remove "hor-menu-light" class to have a horizontal menu with theme background instead of white background -->
+        <!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) in the responsive menu below along with sidebar menu. So the horizontal menu has 2 seperate versions -->
+        <div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+                <!-- DOC: Remove data-hover="megadropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
+                <li class="classic-menu-dropdown active">
+                    <a href="javascript:;">
+                        <em class="user-m"></em>
+						领导视窗
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="bell-m"></em>
+                        预警监测
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="data-m"></em>
+                        数据分析
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="chart-m"></em>
+                        统计图表
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="query-m"></em>
+                        即席查询
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- END HORIZANTAL MENU -->
+        <!-- BEGIN HEADER SEARCH BOX -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+        </a>
+
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown dropdown-user dropdown-user-self">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<img alt="" class="img-circle" src="../../assets/selfsource/images/leader.png" />
+						<span class="username username-hide-on-mobile"> 领导 </span>
+						<em class="iconDown"></em>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-default blue">
+						<em class="iconUp"></em>
+						<li>
+							<a href="#" class="white"> 领导 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 教研组 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 年级组长 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 班主任 </a>
+						</li>
+						 <li>
+							<a href="#" class="white"> 任课教师 </a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown dropdown-user dropdown-user-self">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<span class="username username-hide-on-mobile"> 历史 </span>
+						<em class="iconDown"></em>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-default blue">
+						<em class="iconUp"></em>
+						<li>
+							<a href="#" class="white"> 领导 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 教研组 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 年级组长 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 班主任 </a>
+						</li>
+						 <li>
+							<a href="#" class="white"> 任课教师 </a>
+						</li>
+					</ul>
+				</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<div class="page-content-wrapper">
+        <div class="page-content">
+			<div class="col-sm-4 shineGreen">
+				<div class="recruitment clearfix">
+					<p class="title">集团学校老师数量及招聘余缺 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div id="CIolumn" style="width:100%;height:240px"></div>
+				</div>
+				<div class="consumption clearfix">
+					<p class="title">集团资产消耗情况 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div id="Broken-line" style="width:100%;height:240px"></div>
+				</div>
+				<div class="operations clearfix">
+					<p class="title">集团运维管理费用状况 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div id="cylindrical" style="width:100%;height:240px"></div>
+				</div>
+			</div>
+			<div class="col-sm-5 col-sm-6 col-xs-12">
+				<h2 class="h2-tit-1">陈经纶中学集团数据分析</h2>
+				<p class="subtitle">集团教师<strong>768</strong>人&nbsp;集团学生<strong>4876</strong>人&nbsp;陈经纶全区综合排名<strong>第三</strong></p>
+				<div class="campus-map">
+					<div class="campus-distribution dijing">
+						<a href="#">帝景分校</a>
+						<div class="house dijing-house"></div>
+					</div>
+					<div class="campus-distribution dijing-primary">
+						<a href="#">小学部</a>
+					</div>
+					<div class="campus-distribution dijing-junior">
+						<a href="#">初中部</a>
+					</div>
+					<div class="campus-distribution chongshi-junior">
+						<a href="#">崇实分校初中部</a>
+						<div class="house chongshi-house"></div>
+					</div>
+					<div class="campus-distribution chongshi-primary">
+						<a href="#">崇实分校小学部</a>
+						<div class="house chongshi-primary-house"></div>
+					</div>
+					<div class="campus-distribution baoli">
+						<a href="#">保利分校</a>
+						<div class="house baoli-house"></div>
+					</div>
+					<div class="campus-distribution this-high">
+						<a href="#">本部高中</a>
+						<div class="house this-high-house"></div>
+					</div>
+					<div class="campus-distribution this-junior">
+						<a href="#">本部初中</a>
+						<div class="house this-junior-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-junior">
+						<a href="#">嘉铭西校初中部</a>
+						<div class="house jiaming-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-primary">
+						<a href="#">嘉铭西校小学部</a>
+						<div class="house jiaming-primary-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-east">
+						<a href="#">嘉铭东校</a>
+						<div class="house jiaming-east-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-Primary">
+						<a href="#">小学部</a>
+					</div>
+					<div class="campus-distribution jiaming-Junior">
+						<a href="#">初中部</a>
+					</div>
+					<div class="campus-distribution jiaming-jisu">
+						<a href="#">嘉铭西校寄宿部</a>
+						<div class="house jiaming-jisu-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-oulu">
+						<a href="#">嘉铭东校欧陆经典</a>
+						<div class="house jiaming-oulu-house"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 shineGreen">
+				<div class="attendance clearfix">
+					<p class="title">当月集团各校区老师考勤现状 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<ul class="attendanceCon clearfix">
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li><li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+						<li class="col-md-4 plr5">
+							<div class="plr0">
+								<h4>嘉铭东校初中部</h4>
+								<p>调课人数<strong>2</strong></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="consumption clearfix">
+					<p class="title">当月集团各校区各年级备课数量情况 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div class="portlet-body" id="kwx">
+						<ul class="nav nav-pills">
+							<li class="active">
+								<a href="#tab_2_1" data-toggle="tab"> 小学 </a>
+							</li>
+							<li>
+								<a href="#tab_2_2" data-toggle="tab"> 初中 </a>
+							</li>
+							<li>
+								<a href="#tab_2_3" data-toggle="tab"> 高中 </a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="tab_2_1">
+								<ul class="grade">
+									<li><i class="purple"></i>一年级</li><li><i class="green"></i>二年级</li><li><i class="yellow"></i>三年级</li><li><i class="blue"></i>四年级</li><li><i class="red"></i>五年级</li>
+								</ul>
+								<div id="Primary" class="col-md-2 plr0" style="height:180px;">
+								</div>
+								<div id="JMwest" class="col-md-2 plr0" style="height:180px;">
+								</div>
+								<div id="JMboard" class="col-md-2 plr0" style="height:180px;">
+								</div>
+								<div id="DJPrimary" class="col-md-2 plr0" style="height:180px;">
+								</div>
+								<div id="CSPrimary" class="col-md-2 plr0" style="height:180px;">
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab_2_2">
+								<ul class="Jgrade">
+									<li><i class="purple"></i>初一</li><li><i class="green"></i>初二</li><li><i class="blue"></i>初三</li>
+								</ul>
+								<div id="THJunior" class="col-md-4 plr0" style="width:176px;height:180px;">
+								</div>
+								<div id="JMJunior" class="col-md-4 plr0" style="width:176px;height:180px;">
+								</div>
+								<div id="JMoulu" class="col-md-4 plr0" style="width:176px;height:180px;">
+								</div>								
+								<div id="DJJunior" class="col-md-4 plr0" style="width:176px;height:180px;">
+								</div>
+								<div id="BLJunior" class="col-md-4 plr0" style="width:176px;height:180px;">
+								</div>
+								<div id="CSJunior" class="col-md-4 plr0" style="width:176px;height:180px;">
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab_2_3">
+								<ul class="Jgrade">
+									<li><i class="purple"></i>高一</li><li><i class="green"></i>高二</li><li><i class="blue"></i>高三</li>
+								</ul>
+								<div id="THIShigh" style="width:530px; height:180px;">
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="operations clearfix">
+					<p class="title">当月集团各校区教科研工作成果情况 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div class="gongzuochengguo">
+						<div class="content">
+							<ul>
+								<li>
+									<div id="GBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJMBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJMPBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJOBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJMWBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJJMPBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJMJBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="GJBLBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+									<div id="DJPBar" style="width:560px; height:240px;"></div>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="tab">
+							<a href="javascript:;" class="active">本部高中</a>
+							<a href="javascript:;">本部初中</a>
+							<a href="javascript:;">嘉铭东校初中部</a>
+							<a href="javascript:;">嘉铭东校小学部</a>
+							<a href="javascript:;">嘉铭东校欧陆经典</a>
+							<a href="javascript:;">嘉铭西校初中部</a>
+							<a href="javascript:;">嘉铭西校小学部</a>
+							<a href="javascript:;">嘉铭西校寄宿部</a>
+							<a href="javascript:;">保利分校</a>
+							<a href="javascript:;">帝景分校小学部</a>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END CONTAINER -->
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function() {
+        //Metronic.init(); // init metronic core components
+        //Layout.init(); // init current layout
+        QuickSidebar.init(); // init quick sidebar
+        Demo.init(); // init demo features
+    });
+</script>
+<script type='text/javascript' src='../../assets/selfsource/js/echarts.min.js'></script>
+<script type='text/javascript' src='../../assets/selfsource/js/legend.js'></script>
+<script type='text/javascript' src='../../assets/selfsource/js/junior.js'></script>
+
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

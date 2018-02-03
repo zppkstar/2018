@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>陈经纶系统---学生弱科分析</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!--slefCss _Begin-->
+    <link rel="stylesheet" href="../assets/datasource/css/selfNav.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../assets/selfsource/css/selfCon.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="../assets/selfsource/css/css3.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="../assets/selfsource/css/index.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="../assets/datasource/css/data-consumabels.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../assets/datasource/css/tableCustom.css" rel="stylesheet" type="text/css"/>
+    <!--slefCss _End-->
+    <!--动画引入-->
+    <link rel="stylesheet" type="text/css" href="../assets/datasource/css/animate.min.css"/>
+    <script type="text/javascript" src="../assets/datasource/js/monitor-pub-min.js"></script>
+    <script type="text/javascript" src="../assets/datasource/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../assets/datasource/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../assets/datasource/js/jquery.fullPage.min.js"></script>
+    <!--动画结束-->
+    <link rel="shortcut icon" href="favicon.ico" /> </head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white bg">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar  page-header-self">
+    <!-- BEGIN HEADER INNER -->
+
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="index.html">
+                <img src="../assets/selfsource/images/cjl-system-logo.png" alt="logo" class="logo-default" /> </a>
+            <span class="current-system-name pull-left">陈经纶中学智能数据分析系统</span>
+            <!--<div class="menu-toggler sidebar-toggler"> </div>-->
+        </div>
+        <!-- END LOGO -->
+
+        <div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+            <ul class="nav navbar-nav">
+                <!-- DOC: Remove data-hover="megadropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
+                <li class="classic-menu-dropdown">
+                    <a href="javascript:;">
+                        <em class="user-m"></em>
+						领导视窗
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="bell-m"></em>
+                        预警监测
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="data-m"></em>
+                        数据分析
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="chart-m"></em>
+                        统计图表
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="query-m"></em>
+                        基本信息查询
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <!--<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>-->
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN TOP NAVIGATION MENU -->
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+               <!--  <li class="dropdown dropdown-quick-sidebar-toggler">
+                    <a href="javascript:;" class="dropdown-toggle" style="margin-top:-5px;">
+                        <em class="iconDown"></em>
+                    </a>
+                </li> -->
+				<li class="dropdown dropdown-user dropdown-user-self">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <img alt="" class="img-circle" src="../assets/selfsource/images/leader.png" />
+                                <span class="username username-hide-on-mobile"> 领导 </span>
+                                <em class="iconDown"></em>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default blue">
+								<em class="iconUp"></em>
+                                <li>
+                                    <a href="#" class="white"> 领导 </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white"> 教研组 </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white"> 年级组长 </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white"> 班主任 </a>
+                                </li>
+								 <li>
+                                    <a href="#" class="white"> 任课教师 </a>
+                                </li>
+                            </ul>
+                        </li>
+                <!-- END QUICK SIDEBAR TOGGLER -->
+            </ul>
+        </div>
+        <!-- END TOP NAVIGATION MENU -->
+    <!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<!-- BEGIN HEADER & CONTENT DIVIDER -->
+<div class="clearfix"> </div>
+<!-- END HEADER & CONTENT DIVIDER -->
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <div class="col-md-12 select-box clearfix">
+        <div class="col-md-3 margin-top-20 margin-bottom-10">
+            <label class="white" style="vertical-align: bottom;">学校名称：</label>
+            <select id="single" class="form-down select2">
+                <option></option>
+                <optgroup>
+                    <option value="保利分校">保利分校</option>
+                    <option value="嘉铭东校区">嘉铭东校区</option>
+                    <option value="嘉铭分校">嘉铭分校</option>
+                    <option value="嘉铭西校初中部">嘉铭西校初中部</option>
+                    <option value="嘉铭西校区">嘉铭西校区</option>
+                    <option value="嘉铭西校寄宿部">嘉铭西校寄宿部</option>
+                    <option value="嘉铭西校小学部">嘉铭西校小学部</option>
+                    <option value="国际部">国际部</option>
+                </optgroup>
+            </select> 
+        </div>
+        <div class="col-md-3 margin-top-20 margin-bottom-10">
+            <label class="white" style="vertical-align: bottom;">级别：</label>
+            <select id="single" class="form-down select2">
+                <option></option>
+                <optgroup>
+                    <option value="2012级">2012级</option>
+                    <option value="2013级">2013级</option>
+                    <option value="2014级">2014级</option>
+                    <option value="2015级">2015级</option>
+                </optgroup>
+            </select> 
+        </div>
+        <div class="col-md-3 margin-top-20 margin-bottom-10">
+            <label class="white" style="vertical-align: bottom;">年级：</label>
+            <select id="single" class="form-down select2">
+                <option></option>
+                <optgroup>
+                    <option value="高一">高一</option>
+                    <option value="高三文科">高三文科</option>
+                    <option value="高三理科">高三理科</option>
+                    <option value="高二文科">高二文科</option>
+                    <option value="高二理科">高二理科</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="col-md-3 margin-top-20 margin-bottom-10">
+            <label class="white" style="vertical-align: bottom;">考试：</label>
+            <select id="single" class="form-down select2">
+                <option></option>
+                <optgroup>
+                    <option value="201301期末">201301期末</option>
+                    <option value="201307期末">201307期末</option>
+                    <option value="201401期末">201401期末</option>
+                    <option value="201407期末">201407期末</option>
+                    <option value="201411期中考试">201411期中考试</option>
+                    <option value="201501期末">201501期末</option>
+                    <option value="201501期末考试">201501期末考试</option>
+                    <option value="201504一级考试">201504一级考试</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="col-xs-12 clearfix" style="padding-left:0 !important;margin-bottom:20px">
+                <div class="col-md-12 mt40 border wow fadeInDown animated animated" data-wow-delay="1s" style="visibility: visible;">
+                    <p class="sub-title">成绩提升较快学生名单</p>
+                    <div class="portlet-body margin-top-20">
+                        <div class="margin-top-20 margin-bottom-10 clearfix">
+                            <div class="col-md-12 margin-bottom-10">
+                                <div class="col-md-4 plr0">
+                                    <label class="white" style="letter-spacing: 4px;">总分年级名次：</label>
+                                    <input type="text" class="form-input"/>
+                                    <label class="white">--</label>
+                                    <input type="text" class="form-input"/>
+                                    <a href="#" class="confirm"> 确定 </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <i class="pink square"></i>
+                                <label class="white">设置：低于平均分</label>
+                                <input type="text" class="form-input"/>
+                                <label class="white">到</label>
+                                <input type="text" class="form-input"/>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="red square"></i>
+                                <label class="white">设置：低于平均分</label>
+                                <input type="text" class="form-input"/>
+                                <label class="white">到</label>
+                                <input type="text" class="form-input"/>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="russetish square"></i>
+                                <label class="white">设置：低于平均分</label>
+                                <input type="text" class="form-input"/>
+                                <label class="white">以上</label>
+                                <a href="#" class="confirm"> 确定 </a>
+                                <a href="#" class="confirm"> 导出 </a>
+                            </div>
+                        </div>
+                        <div class="table-scrollable">
+                            <table class="table table-bordered table-hover" id="table">
+                                <thead>
+                                    <tr class="deongaree">
+                                        <th> 名次 <em class="iconDown"></em></th>
+                                        <th> 学号 </th>
+                                        <th> 班级 </th>
+                                        <th> 姓名 </th>
+                                        <th> 总分 </th>
+                                        <th> 语文 </th>
+                                        <th> 数学 </th>
+                                        <th> 英语 </th>
+                                        <th> 物理 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> 1 </td>
+                                        <td> Mark </td>
+                                        <td> Otto </td>
+                                        <td> makr124 </td>
+                                        <td> Mark </td>
+                                        <td class="pink"> Otto </td>
+                                        <td> makr124 </td>
+                                        <td> makr124 </td>
+                                        <td> Otto </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1 </td>
+                                        <td> Jacob </td>
+                                        <td> Nilson </td>
+                                        <td> jac123 </td>
+                                        <td> Mark </td>
+                                        <td> Otto </td>
+                                        <td> makr124 </td>
+                                        <td> makr124 </td>
+                                        <td> Otto </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 2 </td>
+                                        <td> Larry </td>
+                                        <td> Cooper </td>
+                                        <td class="red"> lar </td>
+                                        <td> Mark </td>
+                                        <td> Otto </td>
+                                        <td> makr124 </td>
+                                        <td> makr124 </td>
+                                        <td> Otto </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 3 </td>
+                                        <td> Sandy </td>
+                                        <td> Lim </td>
+                                        <td> sanlim </td>
+                                        <td> Mark </td>
+                                        <td> Otto </td>
+                                        <td> makr124 </td>
+                                        <td class="russetish"> makr124 </td>
+                                        <td> Otto </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12" style="text-align: center;">
+                            <div class="dataTables_paginate paging_bootstrap_full_number" id="sample_1_paginate">
+                                <ul class="pagination" style="visibility: visible;">
+                                    <li class="prev disabled">
+                                        <a href="#" title="First">
+                                        <i class="fa fa-angle-double-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="prev disabled">
+                                        <a href="#" title="Prev">
+                                        <i class="fa fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li class="next">
+                                        <a href="#" title="Next">
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="next">
+                                        <a href="#" title="Last">
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- BEGIN QUICK SIDEBAR -->
+    <a href="javascript:;" class="page-quick-sidebar-toggler">
+        <i class="icon-login"></i>
+    </a>
+
+    <!-- END QUICK SIDEBAR -->
+</div>
+<!-- END CONTAINER -->
+
+<!--mark遮罩 Begin-->
+<div class="mask"></div>
+<!--mark遮罩 End-->
+
+<!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="../assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../assets/pages/scripts/components-select2.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<!-- END THEME LAYOUT SCRIPTS -->
+<!-- selfJs Begin-->
+<script src="../assets/datasource/js/echarts-all.js"></script>
+<script src="../assets/datasource/js/tableSort.js"></script>
+
+</body>
+</html>

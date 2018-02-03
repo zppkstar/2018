@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8"/>
+    <title>陈经纶中学智能数据分析系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link href="../../assets/admin/pages/css/timeline.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/admin/pages/css/news.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/admin/pages/css/todo.css" rel="stylesheet" type="text/css">
+    <!-- BEGIN THEME STYLES -->
+    <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link id="style_color" href="../../assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+	<link href="../../assets/global/css/components.min.css" rel="stylesheet" type="text/css" />
+    <!--slefCss _Begin-->
+    <link rel="stylesheet" href="../../assets/selfsource/css/selfNav.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="../../assets/selfsource/css/selfCon.css" rel="stylesheet" type="text/css"/>
+    <!--slefCss _End-->
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar  page-header-self">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner page-header navbar  page-header-self">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="index.html"><img src="../../assets/selfsource/images/cjl-system-logo.png" alt="logo" class="logo-default" /> </a>
+            <span class="current-system-name pull-left">陈经纶中学智能数据分析系统</span>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN HORIZANTAL MENU -->
+        <!-- DOC: Remove "hor-menu-light" class to have a horizontal menu with theme background instead of white background -->
+        <!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) in the responsive menu below along with sidebar menu. So the horizontal menu has 2 seperate versions -->
+        <div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+                <!-- DOC: Remove data-hover="megadropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
+                <li class="classic-menu-dropdown active">
+                    <a href="javascript:;">
+                        <em class="user-m"></em>
+						领导视窗
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="bell-m"></em>
+                        预警监测
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="data-m"></em>
+                        数据分析
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="chart-m"></em>
+                        统计图表
+                    </a>
+                </li>
+                <li class="mega-menu-dropdown">
+                    <a href="javascript:;">
+						<em class="query-m"></em>
+                        即席查询
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- END HORIZANTAL MENU -->
+        <!-- BEGIN HEADER SEARCH BOX -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+        </a>
+
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown dropdown-user dropdown-user-self">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<img alt="" class="img-circle" src="../../assets/selfsource/images/leader.png" />
+						<span class="username username-hide-on-mobile"> 领导 </span>
+						<em class="iconDown"></em>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-default">
+						<em class="iconUp"></em>
+						<li>
+							<a href="#" class="white"> 领导 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 教研组 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 年级组长 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 班主任 </a>
+						</li>
+						 <li>
+							<a href="#" class="white"> 任课教师 </a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown dropdown-user dropdown-user-self">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<span class="username username-hide-on-mobile"> 历史 </span>
+						<em class="iconDown"></em>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-default">
+						<em class="iconUp"></em>
+						<li>
+							<a href="#" class="white"> 领导 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 教研组 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 年级组长 </a>
+						</li>
+						<li>
+							<a href="#" class="white"> 班主任 </a>
+						</li>
+						 <li>
+							<a href="#" class="white"> 任课教师 </a>
+						</li>
+					</ul>
+				</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<div class="page-content-wrapper">
+        <div class="page-content">
+			<div class="col-sm-4 shineGreen">
+				<div class="score clearfix">
+					<p class="title">本部高中高考成果 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div id="HLinesslide" class="ecar JUDwidth"></div>
+				</div>
+				<div class="school clearfix">
+					<p class="title">近3年高考成绩区排名结果 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+						<div id="BHaraccumulation" class="ecar JUwidth"></div>
+					</p>
+				</div>
+				<div class="stu clearfix">
+					<p class="title">近3年高考分数情况 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+						<div class="portlet-body">
+							<div class="table-scrollable updateTable">
+								<table class="table table-hover table-light">
+									<thead>
+										<tr class="gray">
+											<th>科目</th>
+											<th>实考人数</th>
+											<th>试卷满分</th>
+											<th>年级最高</th>
+											<th>年级最低</th>
+											<th>一本人数</th>
+											<th>重点人数</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td> 理科总分 </td>
+											<td> 450 </td>
+											<td> 660 </td>
+											<td> 613 </td>
+											<td> 420 </td>
+											<td> 453 </td>
+											<td> 453 </td>
+										</tr>
+										<tr>
+											<td> 语文 </td>
+											<td> 450 </td>
+											<td> 120</td>
+											<td> 107 </td>
+											<td> 90 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+										<tr>
+											<td> 数学 </td>
+											<td> 450 </td>
+											<td> 120 </td>
+											<td> 112 </td>
+											<td> 80 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+										<tr>
+											<td> 英语 </td>
+											<td> 450 </td>
+											<td> 120 </td>
+											<td> 109 </td>
+											<td> 85 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+										<tr>
+											<td> 理综 </td>
+											<td> 450 </td>
+											<td> 330 </td>
+											<td> 249 </td>
+											<td> 190 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+										<tr>
+											<td> 文科总分 </td>
+											<td> 450 </td>
+											<td> 660 </td>
+											<td> 622 </td>
+											<td> 420 </td>
+											<td> 411 </td>
+											<td> 411 </td>
+										</tr>
+										<tr>
+											<td> 语文 </td>
+											<td> 450 </td>
+											<td> 120 </td>
+											<td> 116 </td>
+											<td> 90 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+										<tr>
+											<td> 数学 </td>
+											<td> 450 </td>
+											<td> 120 </td>
+											<td> 102 </td>
+											<td> 80 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+										<tr>
+											<td> 英语 </td>
+											<td> 450 </td>
+											<td> 120 </td>
+											<td> 113 </td>
+											<td> 85 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+										<tr>
+											<td> 文综 </td>
+											<td> 450 </td>
+											<td> 330 </td>
+											<td> 254 </td>
+											<td> 210 </td>
+											<td>  </td>
+											<td>  </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-5 col-sm-6 col-xs-12">
+				<h2 class="h2-tit-1">陈经纶本部高中数据分析</h2>
+				<p class="subtitle">集团教师<strong>768</strong>人&nbsp;集团学生<strong>4876</strong>人&nbsp;陈经纶全区综合排名<strong>第三</strong></p>
+				<div class="campus-map">
+					<div class="campus-distribution dijing">
+						<a href="#">帝景分校</a>
+						<div class="house dijing-house"></div>
+					</div>
+					<div class="campus-distribution dijing-primary">
+						<a href="#">小学部</a>
+					</div>
+					<div class="campus-distribution dijing-junior">
+						<a href="#">初中部</a>
+					</div>
+					<div class="campus-distribution chongshi-junior">
+						<a href="#">崇实分校初中部</a>
+						<div class="house chongshi-house"></div>
+					</div>
+					<div class="campus-distribution chongshi-primary">
+						<a href="#">崇实分校小学部</a>
+						<div class="house chongshi-primary-house"></div>
+					</div>
+					<div class="campus-distribution baoli">
+						<a href="#">保利分校</a>
+						<div class="house baoli-house"></div>
+					</div>
+					<div class="campus-distribution this-high">
+						<a href="#">本部高中</a>
+						<div class="house this-high-house"></div>
+					</div>
+					<div class="campus-distribution this-junior">
+						<a href="#">本部初中</a>
+						<div class="house this-junior-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-junior">
+						<a href="#">嘉铭西校初中部</a>
+						<div class="house jiaming-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-primary">
+						<a href="#">嘉铭西校小学部</a>
+						<div class="house jiaming-primary-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-east">
+						<a href="#">嘉铭东校</a>
+						<div class="house jiaming-east-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-Primary">
+						<a href="#">小学部</a>
+					</div>
+					<div class="campus-distribution jiaming-Junior">
+						<a href="#">初中部</a>
+					</div>
+					<div class="campus-distribution jiaming-jisu">
+						<a href="#">嘉铭西校寄宿部</a>
+						<div class="house jiaming-jisu-house"></div>
+					</div>
+					<div class="campus-distribution jiaming-oulu">
+						<a href="#">嘉铭东校欧陆经典</a>
+						<div class="house jiaming-oulu-house"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 shineGreen">
+				<div class="surplus clearfix">
+					<p class="title">本学期本部高中老师调课情况 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div id="BJAR"  class="ecar JUDwidth"></div>
+				</div>
+				<div class="school clearfix">
+					<p class="title">本部高中教师师资力量情况 
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div id="PIEprepare"  class="col-md-12 preHeight"></div>
+				</div>
+				<div class="ring clearfix">
+					<p class="title">本学期本部高中资产消耗情况
+						<a href="javascript:void(0)" title="关闭窗口" class="dialog_btn"></a>
+					</p>
+					<div id="Consumables"  class="ecar col-md-12 preHeight"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--弹出层-->
+	<div id="dialogBg"></div>
+	<div id="dialog" class="animated">
+		<div class="dialogTop">
+			陈经纶中学集团数据分析服务选项列表页
+			<a href="javascript:void(0)" title="关闭窗口" class="close_btn">×</a>
+		</div>
+		<div class="dialogCon col-md-12 clearfix margin-top-20">
+			<div class="col-md-5" id="scrollbar">
+				<div class="radioSet">
+					<div class="apple">
+						<input type="radio" name="fruit" id="apple">
+						<div class="user-defined active">
+							<span class="circle active"></span>
+						</div>
+						<label for="apple">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="banana">
+						<input type="radio" name="fruit" id="banana">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="banana">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="orange">
+						<input type="radio" name="fruit" id="orange">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="orange">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="watermelon">
+						<input type="radio" name="fruit" id="watermelon">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="watermelon">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="cantaloup">
+						<input type="radio" name="fruit" id="cantaloup">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="cantaloup">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="papaya">
+						<input type="radio" name="fruit" id="papaya">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="papaya">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="cherry">
+						<input type="radio" name="fruit" id="cherry">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="cherry">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="plum">
+						<input type="radio" name="fruit" id="plum">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="plum">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="peach">
+						<input type="radio" name="fruit" id="peach">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="peach">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="mulberries">
+						<input type="radio" name="fruit" id="mulberries">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="mulberries">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="grape">
+						<input type="radio" name="fruit" id="grape">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="grape">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="strawberry">
+						<input type="radio" name="fruit" id="strawberry">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="strawberry">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="ximei">
+						<input type="radio" name="fruit" id="ximei">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="ximei">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="ginkgo">
+						<input type="radio" name="fruit" id="ginkgo">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="ginkgo">陈经纶各中学当前区统考成绩</label>
+					</div>
+					<div class="apricot">
+						<input type="radio" name="fruit" id="apricot">
+						<div class="user-defined">
+							<span class="circle"></span>
+						</div>
+						<label for="apricot">陈经纶各中学当前区统考成绩</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7 pd77">
+				<div class="shineGreen appleCon POPwidth" id="Hpopups">
+				</div>
+				<div class="shineGreen bananaCon">
+					22222222222222222222222222222
+				</div>
+				<div class="shineGreen orangeCon">
+					3333333333333333333333333333
+				</div>
+				<div class="shineGreen watermelonCon">
+					44444444444444444444444444444
+				</div>
+				<div class="shineGreen cantaloupCon">
+					5555555555555555555555555
+				</div>
+				<div class="shineGreen papayaCon">
+					666666666666666666666666666666
+				</div>
+				<div class="shineGreen cherryCon">
+					777777777777777777777777777777777
+				</div>
+				<div class="shineGreen plumCon">
+					8888888888888888888888888888888
+				</div>
+				<div class="shineGreen peachCon">
+					99999999999999999999999999999
+				</div>
+				<div class="shineGreen mulberriesCon">
+					10000000000000000000000000000
+				</div>
+				<div class="shineGreen grapeCon">
+					11111111111111111111111111111111111111
+				</div>
+				<div class="shineGreen strawberryCon">
+					1212121212121212121212121212121212121212
+				</div>
+				<div class="shineGreen ximeiCon">
+					13131313131313131313131313131313131313
+				</div>
+				<div class="shineGreen ginkgoCon">
+					141414141414141414141414141414
+				</div>
+				<div class="shineGreen apricotCon">
+					151515151515151515151515151515
+				</div>
+			</div>
+		</div>			   
+		<a href="" class="submitBtn">保存</a>
+	</div>
+</div>
+
+<!-- END CONTAINER -->
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function() {
+        //Metronic.init(); // init metronic core components
+        //Layout.init(); // init current layout
+        QuickSidebar.init(); // init quick sidebar
+        Demo.init(); // init demo features
+    });
+</script>
+
+<script type='text/javascript' src='../../assets/selfsource/js/echarts.min.js'></script>
+<script type='text/javascript' src='../../assets/selfsource/js/gaozhong.js'></script>
+<script type='text/javascript' src='../../assets/selfsource/js/dialog.js'></script>
+
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

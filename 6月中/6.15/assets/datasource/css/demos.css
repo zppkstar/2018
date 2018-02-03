@@ -1,0 +1,137 @@
+html,body,h1,p { padding: 0; margin: 0; }
+body {
+	font-family: '微软雅黑','宋体';
+	font-size:14px;
+}
+.bg{
+	background:url(../images/bg01.jpg)no-repeat;
+	width:100%;
+	background-size: cover;
+
+}
+.interact {
+	border-top: 1px solid #ccc;
+	margin-top: 3em;
+	margin-bottom: 4em;
+	padding-top: 1.5em;
+	text-align: center;
+}
+
+.interact a {
+	background-color: #2179b6;
+	border-bottom: 1px solid #084d7d;
+	color: #eee;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Arial, sans-serif;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	text-decoration: none;
+	padding: 8px 14px;
+	margin: 0 1em;
+}
+
+	.interact p {
+		font-style: italic;
+		color: #666;
+	}
+
+.return {
+	font-size: 1.5em;
+	text-align: center;
+}
+	.return a {
+		color: #2179b6;
+		text-decoration: none;
+	}
+	.return a:hover {
+		text-decoration: underline;
+	}	
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	max-width:1000px;
+	min-height:619px;
+}
+li {
+	text-align: center;
+	cursor: pointer;
+}
+li.roundabout-in-focus {
+	cursor: default;
+}
+
+#carbonads-container {
+	clear: both;
+	margin-top: 1em;
+}
+#carbonads-container .carbonad {
+	margin: 0 auto;
+}
+.disnone{
+	display: none
+}
+a{
+	display: block;
+}
+.text{
+	background: url(../images/enlarge.png) no-repeat center;
+	width:346px;
+	height:265px;
+	color:#ffffff;
+	padding:32px 0;
+}
+.text h1{
+	font-size:36px;
+	text-align: center;
+	padding:20px 0 10px 0;
+}
+.text p{
+	font-size:18px;
+}
+.text p strong{
+	font-size:36px;
+	font-weight: normal;
+}
+.text p strong.yellow{
+	color:#f1ff19;
+}
+.text p strong.red{
+	color:#f50059;
+}
+.page-content-wrapper .page-content{
+	background:url(../images/ellipse.png)no-repeat center center !important;
+	margin-left: 0px !important;
+	min-height: 719px !important;
+	padding:20px 0 0 0;
+	margin-top:70px;
+}
+
+/*右上角下拉菜单*/
+.blue{
+	background:#2f509f;
+	border:1px solid #4367bd;
+}
+.white{
+	color:#fff !important;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2f89e4;
+}
+.page-header.navbar .top-menu .navbar-nav>li.dropdown .dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    right: 9px;
+    display: inline-block!important;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid #2f509f;
+    border-left: 0px solid transparent;
+    border-bottom-color: rgba(47,80,159,1);
+	background:#2f509f;
+    content:'' !important;
+}

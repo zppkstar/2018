@@ -1,0 +1,844 @@
+@charset "UTF-8";
+/*内容框架 Begin*/
+ul,li{list-style-type:none;}
+/*less Begin*/
+@bgNone: none;
+@ml: 0;
+@mt10: 10px;
+@mAuto: 0 auto;
+@position-r: relative;
+@position-a: absolute;
+@zIndex:999;
+@fff:#fff;
+@green:#3ff66e;
+@red:#ff4b4b;
+@f12:12px;
+@f14:14px;
+@none:none;
+@mb0:0;
+@pt6:6px;
+@fl:left;
+@fr:right;
+@tc:center;
+@tl:left;
+@disb:block;
+@disn:none;
+@disi:inline-block;
+@wbfb:100%;
+@hbfb:100%;
+@lh28:28px;
+@fstyle:normal;
+@ovh:hidden;
+@h24:24px;
+@pr12:12px;
+@app:10px;
+/*溢出省略号显示*/
+.sl(){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+.plr0() {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.plr0 {
+  .plr0;
+}
+
+.mt10 {
+  margin-top: @mt10;
+}
+
+.moudel-1() {
+  height: 295px;
+  padding: 0 20px;
+ /* text-align: @tc;*/
+  border: 1px solid #0c3c6a;
+/*  border-radius: 8px !important;*/
+  background-image: -webkit-linear-gradient(to bottom, rgba(6, 42, 83, 0.5), rgba(9, 61, 113, 0.5), rgba(9, 73, 131, 0.5));
+  background-image: -moz-linear-gradient(to bottom, rgba(6, 42, 83, 0.5), rgba(9, 61, 113, 0.5), rgba(9, 73, 131, 0.5));
+  background-image: -ms-linear-gradient(to bottom, rgba(6, 42, 83, 0.5), rgba(9, 61, 113, 0.5), rgba(9, 73, 131, 0.5));
+  background-image: -o-linear-gradient(to bottom, rgba(6, 42, 83, 0.5), rgba(9, 61, 113, 0.5), rgba(9, 73, 131, 0.5));
+  background-image: linear-gradient(to bottom, rgba(6, 42, 83, 0.5), rgba(9, 61, 113, 0.5), rgba(9, 73, 131, 0.5));
+}
+
+.moudel-1-tit() {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.h2-tit-1() {
+  margin: 0 !important;
+  padding: 22px 0;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  background: url("../images/line2-bg.png") no-repeat center center;
+}
+
+/*less End*/
+
+/*css Begin*/
+.page-content-wrapper .page-content {
+  margin-left: @ml !important;
+  background: @bgNone !important;
+  padding: 9px !important;
+}
+
+.moudel-1 {
+  .moudel-1;
+}
+.moudel-1-map{
+  position: @position-r;
+  height: 526px;
+}
+.moudel-1-tit {
+  .moudel-1-tit;
+}
+
+.h2-tit-1 {
+  .h2-tit-1;
+}
+
+/*css End*/
+/*内容框架 End*/
+
+/*初高中升学率 Begin*/
+.square(){
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  background: #e1bd29;
+  text-align: center;
+}
+.moudel-1-rank{
+  padding: 0 6px 0 0;
+}
+.rank-list{
+  height: 222px;
+  padding:6px 20px 0;
+  overflow: @ovh;
+  ul{
+    padding: 0;
+    li{
+      line-height: @lh28;
+      i{
+        display: inline-block;
+        font-style: @fstyle;
+        margin-right: 6px;
+        font-size: 12px;
+      }
+      i.square{
+        .square;
+      }
+      span{
+        float: @fr;
+        em{
+          font-style: @fstyle;
+          padding-left: 12px;
+        }
+      }
+      a{
+        width: 50%;
+        color: @fff;
+        text-decoration: none;
+        .sl;
+        &:hover{
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  color:@fff;
+}
+.nicescroll-rails{
+  background: #072951;
+}
+/*初高中升学率 End*/
+
+/*陈经纶集团学校地图 Begin*/
+.campus-map {
+  width: 428px;
+  height: 448px;
+  margin: @mAuto;
+  background: url("../images/campus-map01.png") no-repeat;
+}
+
+/*圆环 Beign*/
+@l50bfb: 50%;
+@t50bfb: 50%;
+@radius: 50%;
+.circle {
+  width: 100px;
+  height: 100px;
+  position: @position-a;
+  top: @t50bfb;
+  left: @l50bfb;
+  margin: -100px 0 0 -100px;
+}
+
+.circle1 {
+  position: absolute;
+  left: @l50bfb;
+  top: @t50bfb;
+  margin: -30px 0 0 -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: @radius !important;
+  border: 1px solid #3bea77;
+}
+
+.circle2 {
+  &:extend(.circle1);
+}
+
+.circle3 {
+  &:extend(.circle1);
+}
+
+.center {
+  position: @position-a;
+  left: @l50bfb;
+  top: @t50bfb;
+  margin: -5px 0 0 -5px;
+  width: 12px;
+  height: 12px;
+  border-radius: @radius !important;
+  background: #3ff66e;
+  line-height: 70px;
+}
+
+.circle1 {
+  -webkit-animation: circle 1.5s linear infinite;
+  -moz-animation: circle 1.5s linear infinite;
+  -ms-animaiton: circle 1.5s linear infinite;
+  -o-animation: circle 1.5s linear infinite;
+  animation: circle 1.5s linear infinite;
+}
+
+.circle2 {
+  -webkit-animation: circle 1.5s linear 0.8s infinite;
+  -moz-animation: circle 1.5s linear 0.8s infinite;
+  -ms-animation: circle 1.5s linear 0.8s infinite;
+  -o-animation: circle 1.5s linear 0.8s infinite;
+  animation: circle 1.5s linear 0.8s infinite;
+}
+
+.circle3 {
+  -webkit-animation: circle 1.5s linear 1.6s infinite;
+  -moz-animation: circle 1.5s linear 1.6s infinite;
+  -ms-animation: circle 1.5s linear 1.6s infinite;
+  -o-animation: circle 1.5s linear 1.6s infinite;
+  animation: circle 1.5s linear 1.6s infinite;
+}
+
+.jingdi-circle{
+  .circle1 {
+    -webkit-animation: circle 2s linear infinite;
+    -moz-animation: circle 2s linear infinite;
+    -ms-animaiton: circle 2s linear infinite;
+    -o-animation: circle 2s linear infinite;
+    animation: circle 2s linear infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 2s linear 0.8s infinite;
+    -moz-animation: circle 2s linear 0.8s infinite;
+    -ms-animation: circle 2s linear 0.8s infinite;
+    -o-animation: circle 2s linear 0.8s infinite;
+    animation: circle 2s linear 0.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 2s linear 1.6s infinite;
+    -moz-animation: circle 2s linear 1.6s infinite;
+    -ms-animation: circle 2s linear 1.6s infinite;
+    -o-animation: circle 2s linear 1.6s infinite;
+    animation: circle 2s linear 1.6s infinite;
+  }
+}
+
+.chongshi-junior{
+  .circle1 {
+    -webkit-animation: circle 2.5s linear 2s infinite;
+    -moz-animation: circle  2.5s linear 2s infinite;
+    -ms-animaiton: circle  2.5s linear 2s infinite;
+    -o-animation: circle  2.5s linear 2s infinite;
+    animation: circle  2.5s linear 2s infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 2.5s linear 2.8s infinite;
+    -moz-animation: circle 2.5s linear 2.8s infinite;
+    -ms-animation: circle 2.5s linear 2.8s infinite;
+    -o-animation: circle 2.5s linear 2.8s infinite;
+    animation: circle 2.5s linear 2.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 2.5s linear 3.6s infinite;
+    -moz-animation: circle 2.5s linear 3.6s infinite;
+    -ms-animation: circle 2.5s linear 3.6s infinite;
+    -o-animation: circle 2.5s linear 3.6s infinite;
+    animation: circle 2.5s linear 3.6s infinite;
+  }
+}
+.chongshi-primary-circle{
+  .circle1 {
+    -webkit-animation: circle 3s linear 2s infinite;
+    -moz-animation: circle 3s linear 2s infinite;
+    -ms-animaiton: circle 3s linear 2s infinite;
+    -o-animation: circle 3s linear 2s infinite;
+    animation: circle 3s linear 2s infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 3s linear 2.8s infinite;
+    -moz-animation: circle 3s linear 2.8s infinite;
+    -ms-animation: circle 3s linear 2.8s infinite;
+    -o-animation: circle 3s linear 2.8s infinite;
+    animation: circle 3s linear 2.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 3s linear 3.6s infinite;
+    -moz-animation: circle 3s linear 3.6s infinite;
+    -ms-animation: circle 3s linear 3.6s infinite;
+    -o-animation: circle 3s linear 3.6s infinite;
+    animation: circle 3s linear 3.6s infinite;
+  }
+}
+
+.baoli-circle{
+  .circle1 {
+    -webkit-animation: circle 3.5s linear 3s infinite;
+    -moz-animation: circle 3.5s linear 2s infinite;
+    -ms-animaiton: circle 3.5s linear 2s infinite;
+    -o-animation: circle 3.5s linear 2s infinite;
+    animation: circle 3.5s linear 2s infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 3.5s linear 3.8s infinite;
+    -moz-animation: circle 3.5s linear 3.8s infinite;
+    -ms-animation: circle 3.5s linear 3.8s infinite;
+    -o-animation: circle 3.5s linear 3.8s infinite;
+    animation: circle 3.5s linear 3.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 3.5s linear 4.6s infinite;
+    -moz-animation: circle 3.5s linear 4.6s infinite;
+    -ms-animation: circle 3.5s linear 4.6s infinite;
+    -o-animation: circle 3.5s linear 4.6s infinite;
+    animation: circle 3.5s linear 4.6s infinite;
+  }
+}
+
+
+.this-high-circle{
+  .circle1 {
+    -webkit-animation: circle 3s linear 2s infinite;
+    -moz-animation: circle 3s linear 2s infinite;
+    -ms-animaiton: circle 3s linear 2s infinite;
+    -o-animation: circle 3s linear 2s infinite;
+    animation: circle 3s linear 2s infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 3s linear 2.8s infinite;
+    -moz-animation: circle 3s linear 2.8s infinite;
+    -ms-animation: circle 3s linear 2.8s infinite;
+    -o-animation: circle 3s linear 2.8s infinite;
+    animation: circle 3s linear 2.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 3s linear 3.6s infinite;
+    -moz-animation: circle 3s linear 3.6s infinite;
+    -ms-animation: circle 3s linear 3.6s infinite;
+    -o-animation: circle 3s linear 3.6s infinite;
+    animation: circle 3s linear 3.6s infinite;
+  }
+}
+.this-junior{
+  .circle1 {
+    -webkit-animation: circle 2s linear infinite;
+    -moz-animation: circle 2s linear infinite;
+    -ms-animaiton: circle 2s linear infinite;
+    -o-animation: circle 2s linear infinite;
+    animation: circle 2s linear infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 2s linear 0.8s infinite;
+    -moz-animation: circle 2s linear 0.8s infinite;
+    -ms-animation: circle 2s linear 0.8s infinite;
+    -o-animation: circle 2s linear 0.8s infinite;
+    animation: circle 2s linear 0.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 2s linear 1.6s infinite;
+    -moz-animation: circle 2s linear 1.6s infinite;
+    -ms-animation: circle 2s linear 1.6s infinite;
+    -o-animation: circle 2s linear 1.6s infinite;
+    animation: circle 2s linear 1.6s infinite;
+  }
+}
+.jiaming-junior-circle{
+  .circle1 {
+    -webkit-animation: circle 3.5s linear 3s infinite;
+    -moz-animation: circle 3.5s linear 2s infinite;
+    -ms-animaiton: circle 3.5s linear 2s infinite;
+    -o-animation: circle 3.5s linear 2s infinite;
+    animation: circle 3.5s linear 2s infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 3.5s linear 3.8s infinite;
+    -moz-animation: circle 3.5s linear 3.8s infinite;
+    -ms-animation: circle 3.5s linear 3.8s infinite;
+    -o-animation: circle 3.5s linear 3.8s infinite;
+    animation: circle 3.5s linear 3.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 3.5s linear 4.6s infinite;
+    -moz-animation: circle 3.5s linear 4.6s infinite;
+    -ms-animation: circle 3.5s linear 4.6s infinite;
+    -o-animation: circle 3.5s linear 4.6s infinite;
+    animation: circle 3.5s linear 4.6s infinite;
+  }
+}
+
+.jiaming-jisu-circle{
+  .circle1 {
+    -webkit-animation: circle 3.5s linear 3s infinite;
+    -moz-animation: circle 3.5s linear 2s infinite;
+    -ms-animaiton: circle 3.5s linear 2s infinite;
+    -o-animation: circle 3.5s linear 2s infinite;
+    animation: circle 3.5s linear 2s infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 3.5s linear 3.8s infinite;
+    -moz-animation: circle 3.5s linear 3.8s infinite;
+    -ms-animation: circle 3.5s linear 3.8s infinite;
+    -o-animation: circle 3.5s linear 3.8s infinite;
+    animation: circle 3.5s linear 3.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 3.5s linear 4.6s infinite;
+    -moz-animation: circle 3.5s linear 4.6s infinite;
+    -ms-animation: circle 3.5s linear 4.6s infinite;
+    -o-animation: circle 3.5s linear 4.6s infinite;
+    animation: circle 3.5s linear 4.6s infinite;
+  }
+}
+.jiaming-east-circle{
+  .circle1 {
+    -webkit-animation: circle 2s linear infinite;
+    -moz-animation: circle 2s linear infinite;
+    -ms-animaiton: circle 2s linear infinite;
+    -o-animation: circle 2s linear infinite;
+    animation: circle 2s linear infinite;
+  }
+
+  .circle2 {
+    -webkit-animation: circle 2s linear 0.8s infinite;
+    -moz-animation: circle 2s linear 0.8s infinite;
+    -ms-animation: circle 2s linear 0.8s infinite;
+    -o-animation: circle 2s linear 0.8s infinite;
+    animation: circle 2s linear 0.8s infinite;
+  }
+
+  .circle3 {
+    -webkit-animation: circle 2s linear 1.6s infinite;
+    -moz-animation: circle 2s linear 1.6s infinite;
+    -ms-animation: circle 2s linear 1.6s infinite;
+    -o-animation: circle 2s linear 1.6s infinite;
+    animation: circle 2s linear 1.6s infinite;
+  }
+}
+
+
+
+@-webkit-keyframes circle {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes circle {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+}
+
+@-ms-keyframes circle {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+}
+
+@-o-keyframes circle {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+}
+
+.campus-map {
+  position: @position-r;
+  .campus-distribution {
+    position: @position-r;
+    span{
+      position: @position-a;
+      color: #fff;
+    }
+  }
+  .jingdi {
+    left: 34px;
+    top: 371px;
+    span {
+      left: 175px;
+      top: -60px;
+    }
+  }
+  .chongshi-junior {
+    left: 170px;
+    top: 388px;
+    span{
+      left: 175px;
+      top: -60px;
+    }
+  }
+  .chongshi-primary{
+    left: 166px;
+    top: 408px;
+    span{
+      left: 175px;
+      top: -60px;
+    }
+  }
+  .baoli{
+    left:170px;
+    top: 322px;
+    span{
+      left: 175px;
+      top: -60px;
+    }
+  }
+  .this-high{
+    left: 28px;
+    top: 292px;
+    span{
+      left: 175px;
+      top: -60px;
+    }
+  }
+  .this-junior{
+    left: 15px;
+    top: 284px;
+    span{
+      left:100px;
+      top: -60px;
+    }
+  }
+  .jiaming-junior{
+    left: -108px;
+    top: 170px;
+    span{
+      left: 58px;
+      top: -60px;
+    }
+  }
+  .jiaming-jisu{
+    left: -82px;
+    top: 190px;
+    span{
+      left: 58px;
+      top: -60px;
+    }
+  }
+  .jiaming-east{
+    z-index: 10;
+    left: -58px;
+    top: 150px;
+    span{
+      left:175px;
+      top: -60px;
+    }
+  }
+  .jiaming-primary{
+    left: -87px;
+    top: 174px;
+    span{
+      left:175px;
+      top: -60px;
+    }
+  }
+}
+.link-circle(){
+  display:@disb;
+  position: @position-a;
+  width: 12px;
+  height: 12px;
+  border-radius: @radius !important;
+  background:@none;
+  z-index: 99;
+}
+.link-circle{
+  .link-circle;
+}
+.chongshi-junior-link-circle{
+  left: 329px;
+  top: 333px;
+}
+.chongshi-primary-link-circle{
+  left: 325px;
+  top: 353px;
+}
+.baoli-link-circle{
+  left: 329px;
+  top: 267px;
+}
+.this-high-link-circle{
+  left: 174px;
+  top: 229px;
+}
+.this-junior-link-circle{
+  left: 187px;
+  top: 237px;
+}
+.jiaming-junior-link-circle{
+  left: 51px;
+  top: 115px;
+}
+.jiaming-jisu-link-circle{
+  left: 77px;
+  top: 135px;
+}
+.jiaming-east-link-circle{
+  left: 101px;
+  top: 95px;
+  z-index: 9999;
+}
+.jiaming-primary-link-circle{
+  left: 72px;
+  top: 119px;
+}
+.jingdi-link-circle{
+/*  position: @position-a;*/
+  top: 316px;
+  left: 193px;
+  z-index: 9999;
+}
+.branch-wraper{
+  display:@disn;
+  width: 228px;
+  height: 88px;
+  background: url(../images/branch-bg.png) no-repeat;
+  z-index: @zIndex;
+  dl{
+    position: @position-a;
+    width: 143px;
+    height: 78px;
+    margin-bottom: 0 !important;
+    padding: 8px 0 0 12px;
+    left: 78px;
+    top: 5px;
+    dt{
+      text-align: @tl;
+      padding-bottom: 6px;
+      color: @fff;
+    }
+    dd{
+      float: @fl;
+      margin-right: 18px;
+      a{
+        color: @fff;
+        &:hover{
+          color: @fff;
+          text-decoration: @none !important;
+        }
+      }
+      &:first-child{
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.jingdi-branch-wraper{
+  position: @position-a;
+  top: 310px;
+  left: 199px;
+  &:extend(.branch-wraper);
+}
+.jiaming-east-branch-wraper{
+  position: @position-a;
+  top: 82px;
+  left: 106px;
+  &:extend(.branch-wraper);
+}
+
+.campus-info{
+  position: @position-a;
+  right: 12px;
+  top: 84px;
+  text-align: @tl;
+  .campus-info-moudel{
+    padding: 5px 15px;
+    width: 105px;
+    margin-top: 2px;
+    background: #022c59;
+    .campus-info-moudel-tit{
+      color: @fff;
+      font-size: @f12;
+    }
+    span{
+      display: @disb;
+      color: @green;
+    }
+    span.green{
+      font-size: @f14;
+    }
+    span.red{
+      color: @red;
+    }
+    span.red-arrow{
+      background: url("../images/red-arrow.png") no-repeat 24px 6px;
+    }
+  }
+  .campus-info-moudel:first-child{
+    margin-top: 0;
+  }
+}
+/*圆环 End*/
+/*陈经纶集团学校地图 End*/
+
+/*名师特色 Begin*/
+.bradius3(){
+  border-radius:3px !important;
+  -moz-border-radius:3px !important;
+  -webkit-border-radius:3px !important;
+}
+.progress-wrapper {
+  height:@h24;
+  line-height: 24px;
+  display: @disb;
+  margin-bottom: 8px;
+  .progress-bar-tit {
+    width: 100px;
+    padding-right:@pr12;
+    float: left;
+    display:@disi;
+    font-size:@f12;
+    color:@fff;
+    span{
+      display:@disb;
+    }
+  }
+  .skillbar {
+    float: @fl;
+    position:relative;
+    display:@disi;
+    margin-top:8px;
+    width:200px;
+    height:8px;
+   .bradius3;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+    .skillbar-bar {
+      height:8px;
+      width:0px;
+      background:#6adcfa;
+      .bradius3;
+    }
+  }
+  .skill-bar-percent {
+    float: @fl;
+    display: @disi;
+    font-size:@f12;
+    color:@fff;
+  }
+}
+/*名师特色 End*/
+
+
+
+
+/*mark 遮罩 Begin*/
+/*.mask{
+  position: @position-a;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: @wbfb;
+  height: @hbfb;
+  /!*background:url("../images/body-tm-bg.png") repeat;*!/
+}*/
+/*mark 遮罩 End*/
+
